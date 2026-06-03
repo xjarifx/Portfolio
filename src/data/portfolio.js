@@ -4,18 +4,17 @@ export const portfolio = {
   // ============================================================
   metadata: {
     name: "Md. Junaidul Islam Jarif",
-    title: "Software Engineer",
+    title: "Backend Developer",
     tagline:
       "I build responsive web experiences and scalable backend systems end-to-end.",
     email: "office.jarif@gmail.com",
-    phone: "+880 1540165110",
+    phone: "+880 1540-165110",
     location: "Dhaka, Bangladesh",
 
     // Social links - displayed in sidebar footer
     social: {
       github: "https://github.com/xjarifx",
       linkedin: "https://www.linkedin.com/in/xjarifx",
-      x: "https://x.com/J4R1F",
     },
   },
 
@@ -95,6 +94,26 @@ export const portfolio = {
             {
               label: "Source Code",
               url: "https://github.com/xjarifx/better-media",
+            },
+          ],
+        },
+        {
+          title: "Better Communication",
+          description: [
+            "Real-time messaging and P2P video calling app",
+            "Direct and group chats with typing indicators and file sharing",
+            "WebRTC-based video calls with Socket.IO signaling",
+            "Built with Next.js, Socket.IO, and PostgreSQL",
+            "Prisma ORM for database management with ImageKit for media",
+          ],
+          links: [
+            {
+              label: "Live Demo",
+              url: "https://better-communication.vercel.app",
+            },
+            {
+              label: "Source Code",
+              url: "https://github.com/xjarifx/better-communication",
             },
           ],
         },

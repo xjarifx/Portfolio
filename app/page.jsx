@@ -86,7 +86,7 @@ export default function Home() {
             {allProjects.map((p, i) => (
               <article key={i} className="border-[3px] border-black bg-white shadow-[3px_3px_0_#000]">
                 <div className="p-6">
-                  <h3 className="text-base font-bold text-black mb-2">{p.title}</h3>
+                  <h3 className="text-xl font-bold text-black mb-2">{p.title}</h3>
                   <ul className="text-sm text-[#525252] leading-relaxed mb-4 list-disc list-inside space-y-1">
                     {p.description.map((point, j) => (
                       <li key={j}>{point}</li>
