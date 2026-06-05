@@ -3,7 +3,7 @@ export const portfolio = {
   // METADATA: Personal information and navigation config
   // ============================================================
   metadata: {
-    name: "Md. Junaidul Islam Jarif",
+    name: "Md Junaidul Islam Jarif",
     title: "Backend Developer",
     tagline:
       "I build responsive web experiences and scalable backend systems end-to-end.",
