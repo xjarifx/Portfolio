@@ -56,35 +56,27 @@ export const portfolio = {
         {
           title: "Better Calendar",
           description: [
-            "AI-powered event extraction from natural language using OpenRouter",
-            "Dual-mode authentication (JWT Bearer tokens + HTTP-only cookies)",
-            "All-day, timed, and multi-day event support",
-            "Calendar views with drag-and-drop via dnd-kit",
-            "Personal OpenRouter API key configuration in settings",
-            "Responsive design with Tailwind CSS and shadcn/ui",
+            "Built an AI-powered calendar app with dual-mode JWT auth (Bearer + cookies) and token versioning for credential invalidation on password changes",
+            "Integrated OpenRouter AI to parse natural language into structured calendar events, with per-user API key configuration stored in the database",
+            "Engineered a flexible event schema (all-day, timed, multi-day) with drag-and-drop calendar using dnd-kit and complete user-scoped data isolation",
           ],
           links: [
             {
               label: "Live Demo",
-              url: "https://better-calender-jarif.vercel.app",
+              url: "https://better-calendar-jarif.vercel.app",
             },
             {
               label: "Source Code",
-              url: "https://github.com/xjarifx/better-calender",
+              url: "https://github.com/xjarifx/better-calendar",
             },
           ],
         },
         {
           title: "Better Media",
           description: [
-            "Full-stack social media platform with Twitter/X-like functionality",
-            "JWT authentication with access/refresh token rotation & revocation",
-            "Post creation with images; public/private visibility; Following & For You feeds",
-            "Threaded comments with nested reply support",
-            "Like/unlike posts & comments with real-time notifications",
-            "Follow/unfollow system with notification generation",
-            "User blocking with feed/content exclusion",
-            "PRO subscriptions via Stripe checkout with expanded features",
+            "Built a full-stack social media platform with JWT access/refresh token rotation, soft-deletes, and a Redis/in-memory cache layer with domain-specific TTLs",
+            "Implemented Stripe PRO subscriptions with checkout and payment-intent flows, webhook activation, automated plan expiration, and content tiering (20 vs 100 char limits)",
+            "Built a social graph engine with follow/unfollow, user blocking with feed exclusion, denormalized counters, and cached typed notifications",
           ],
           links: [
             {
@@ -100,11 +92,9 @@ export const portfolio = {
         {
           title: "Better Communication",
           description: [
-            "Real-time messaging and P2P video calling app",
-            "Direct and group chats with typing indicators and file sharing",
-            "WebRTC-based video calls with Socket.IO signaling",
-            "Built with Next.js, Socket.IO, and PostgreSQL",
-            "Prisma ORM for database management with ImageKit for media",
+            "Architected real-time messaging via standalone Socket.IO server with direct/group conversations, cursor-based pagination, and throttled typing indicators",
+            "Implemented P2P WebRTC video calling with STUN NAT traversal and Socket.IO signaling relay, including call state tracking and incoming call notifications",
+            "Designed a modular backend with repository/service pattern, JWT auth with 15-min access tokens, and ImageKit CDN for file/image/video attachments with thumbnails",
           ],
           links: [
             {
