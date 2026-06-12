@@ -4,9 +4,7 @@ export const portfolio = {
   // ============================================================
   metadata: {
     name: "Md Junaidul Islam Jarif",
-    title: "Backend Developer",
-    tagline:
-      "I build responsive web experiences and scalable backend systems end-to-end.",
+    title: "Software Developer",
     email: "office.jarif@gmail.com",
     phone: "+880 1540-165110",
     location: "Dhaka, Bangladesh",
@@ -22,31 +20,6 @@ export const portfolio = {
   // SECTIONS: Dynamically rendered content sections
   // ============================================================
   sections: [
-    // ========== TECH STACK SECTION ==========
-    {
-      id: "techstack",
-      type: "techstack",
-      title: "Tech Stack",
-      categories: [
-        {
-          label: "Languages",
-          skills: ["TypeScript"],
-        },
-        {
-          label: "Frontend",
-          skills: ["Next.js"],
-        },
-        {
-          label: "Backend",
-          skills: ["Node.js"],
-        },
-        {
-          label: "Database",
-          skills: ["PostgreSQL", "MongoDB"],
-        },
-      ],
-    },
-
     // ========== PROJECTS SECTION ==========
     {
       id: "projects",
@@ -55,11 +28,7 @@ export const portfolio = {
       items: [
         {
           title: "Better Calendar",
-          description: [
-            "Built an AI-powered calendar app with dual-mode JWT auth (Bearer + cookies) and token versioning for credential invalidation on password changes",
-            "Integrated OpenRouter AI to parse natural language into structured calendar events, with per-user API key configuration stored in the database",
-            "Engineered a flexible event schema (all-day, timed, multi-day) with drag-and-drop calendar using dnd-kit and complete user-scoped data isolation",
-          ],
+          description: "An AI-powered calendar that turns natural language into events on a drag-and-drop interface.",
           links: [
             {
               label: "Live Demo",
@@ -73,11 +42,7 @@ export const portfolio = {
         },
         {
           title: "Better Media",
-          description: [
-            "Built a full-stack social media platform with JWT access/refresh token rotation, soft-deletes, and a Redis/in-memory cache layer with domain-specific TTLs",
-            "Implemented Stripe PRO subscriptions with checkout and payment-intent flows, webhook activation, automated plan expiration, and content tiering (20 vs 100 char limits)",
-            "Built a social graph engine with follow/unfollow, user blocking with feed exclusion, denormalized counters, and cached typed notifications",
-          ],
+          description: "A social media platform with subscriptions, follows, and real-time notifications.",
           links: [
             {
               label: "Live Demo",
@@ -91,11 +56,7 @@ export const portfolio = {
         },
         {
           title: "Better Communication",
-          description: [
-            "Architected real-time messaging via standalone Socket.IO server with direct/group conversations, cursor-based pagination, and throttled typing indicators",
-            "Implemented P2P WebRTC video calling with STUN NAT traversal and Socket.IO signaling relay, including call state tracking and incoming call notifications",
-            "Designed a modular backend with repository/service pattern, JWT auth with 15-min access tokens, and ImageKit CDN for file/image/video attachments with thumbnails",
-          ],
+          description: "A real-time messaging and video calling app with group chats and file sharing.",
           links: [
             {
               label: "Live Demo",

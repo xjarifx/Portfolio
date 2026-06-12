@@ -4,7 +4,6 @@ import { useState, useCallback, useRef } from "react";
 import { portfolio } from "@/src/data/portfolio";
 
 const { metadata, sections } = portfolio;
-const techstack = sections.find(s => s.type === "techstack");
 const projects = sections.find(s => s.type === "project");
 const cert = sections.find(s => s.type === "certification");
 const edu = sections.find(s => s.type === "education");
@@ -87,11 +86,9 @@ export default function Home() {
               <article key={i} className="border-[3px] border-black bg-white shadow-[3px_3px_0_#000]">
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-black mb-2">{p.title}</h3>
-                  <ul className="text-sm text-[#525252] leading-relaxed mb-4 list-disc list-inside space-y-1">
-                    {p.description.map((point, j) => (
-                      <li key={j}>{point}</li>
-                    ))}
-                  </ul>
+                  <p className="text-sm text-[#525252] leading-relaxed mb-4">
+                    {p.description}
+                  </p>
                   <div className="flex gap-2">
                     {p.links?.map((l, j) => (
                       <a key={j} href={l.url} target="_blank" rel="noreferrer noopener"
@@ -102,24 +99,6 @@ export default function Home() {
                   </div>
                 </div>
               </article>
-            ))}
-          </div>
-        </section>
-
-        <section id="g-stack">
-          <h2 className="text-3xl font-extrabold uppercase tracking-tighter text-black mb-8 border-b-4 border-rose-500 pb-3">
-            Stack
-          </h2>
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4">
-            {techstack?.categories.map((cat, i) => (
-              <div key={i} className="border-[3px] border-black p-5 bg-white shadow-[2px_2px_0_#000]">
-                <h3 className="text-xs font-bold uppercase tracking-wide text-black mb-3">{cat.label}</h3>
-                <div className="flex flex-wrap gap-1.5">
-                  {cat.skills.map((s, j) => (
-                    <span key={j} className="px-2.5 py-0.5 border-2 border-black text-xs font-semibold bg-[#fef08a]">{s}</span>
-                  ))}
-                </div>
-              </div>
             ))}
           </div>
         </section>
